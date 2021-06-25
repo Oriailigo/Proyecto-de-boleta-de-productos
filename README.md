@@ -23,7 +23,8 @@
  Se podrían colocar imágenes de cada página o gifs o animaciones.
 ### URL del sitio:
 ## Que necesitas para correr el proyecto:
-```(librerías, modo de instalación).
+```
+(librerías, modo de instalación).
 
 
 
