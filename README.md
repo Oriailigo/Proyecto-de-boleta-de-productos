@@ -9,7 +9,7 @@
 | Linkedin | Repositorio |
 | -------  | ------- |
 | [Ailigo Oriana](linkedin.com/in/oriana-ailigo) | https://github.com/Oriailigo |
-| [Aguilar Sergio](linkedin.com/in/sergioaguilarsoria) | github.com/infosergio2020 |
+| [Aguilar Sergio](linkedin.com/in/sergioaguilarsoria) | https://github.com/infosergio2020 |
 ## Tecnologías:
 * HTML
 * JS
