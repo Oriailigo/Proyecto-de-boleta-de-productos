@@ -1,4 +1,8 @@
-# Proyecto-de-boleta-de-productos 💚
+<h1 align="center"> 
+ Proyecto-de-boleta-de-productos 💚  
+<img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></h1>
+
+
 ## Estado del proyecto:
 > En desarrollo.
 ## Descripción:
@@ -21,13 +25,16 @@
 ## Páginas:
   * ### index:
      Se podrían colocar imágenes de cada página o gifs o animaciones.
-### URL del sitio:
+### URL del sitio:  
+* [boleta de productos](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md)
 ## Que necesitas para correr el proyecto:
+ * NodeJS
+ * Mongodb
 ```
-(librerías, modo de instalación).
-
-
-
+npm install 
+```
+```
+npm run devstart
 ```
 ## Descripción de cada script:
 > 1) script.js: 
