@@ -19,8 +19,8 @@
 ## Maquetado:
 > No se realizó.
 ## Páginas:
-### index:
- Se podrían colocar imágenes de cada página o gifs o animaciones.
+  * ### index:
+     Se podrían colocar imágenes de cada página o gifs o animaciones.
 ### URL del sitio:
 ## Que necesitas para correr el proyecto:
 ```
