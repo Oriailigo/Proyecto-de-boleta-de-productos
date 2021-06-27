@@ -1,0 +1,226 @@
+:root{
+    --blanco: #fffffF;
+    --oscuro: #050505;
+    --primario: #06410b;
+    --azul: #0F5085;
+    --celeste: #52a3e6;
+    --gris: #363030;
+    --grisClaro: #dfdfdf;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-size: 1.6rem; /* default font-size for document */
+    font-family: 'Krub', sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+/*
+  ____          _____               _ _           _       
+ |  _ \        |  __ \             (_) |         | |      
+ | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___ 
+ |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
+ | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
+ |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
+         __/ |                               __/ |        
+        |___/                               |___/         
+    
+____________________________________
+/ Si necesitas ayuda, contáctame en \
+\ https://parzibyte.me               /
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+Creado por Parzibyte (https://parzibyte.me). Este encabezado debe mantenerse intacto,
+excepto si este es un proyecto de un estudiante.
+*/
+/*
+Podemos agregar estilos
+*/
+table {
+    border-collapse: collapse;
+}
+ 
+table,
+th,
+td {
+    border: 1px solid black;
+}
+ 
+th,
+td {
+    padding: 5px;
+}
+
+a{
+    color: #d9ff00;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 300ms ease-in-out,
+                color 500ms ease-in-out;
+}
+
+a:hover,a:focus-within{
+    transform: scale(1.5);
+    color: var(--blanco);
+    outline: none;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.hero{
+    background-image: url("../img/ticket-compra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-attachment: fixed; */
+   
+    background-position: center;
+    height: 25rem;
+    position: relative;
+}
+
+.contenido-hero{
+    background-color: rgba(0, 0, 0, 0.698);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero h2{
+    margin-top: 1rem;
+}
+
+.contenido-hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contenido-hero img{
+    width: 18rem;
+    height: 14rem;
+}
+
+.nav-bg{
+    background-image: linear-gradient(to top, var(--azul) 0%, var(--celeste) 100%);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.navegacion-principal a{
+    margin-bottom: 1rem;
+}
+
+.navegacion-principal a:last-of-type{
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navegacion-principal a{
+        margin: 0;
+    }
+}
+
+.sombra{
+   
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    /* fondo de la tarjeta */
+    background-image: linear-gradient(to left, var(--azul) 0%, var(--celeste) 30%);
+    border-radius: 2rem;
+}
+
+
+.form-group label{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-group input{
+    border-radius: .8rem;
+    border-color: var(--gris);
+}
+
+.btn{
+    color: var(--blanco);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: .8rem;
+    transition: transform 400ms cubic-bezier(0.7,-0.42, 0.35, 1.24);
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.btn-custom-3{
+    background-color: rgba(165, 16, 16, 0.555);
+}
+.btn-custom-2{
+    background-color: royalblue;
+}
+.btn-custom-1{
+    background-color: seagreen;
+}
+
+
+.bg-light{
+
+    background-image: linear-gradient(to top, var(--azul) 0%, var(--celeste) 100%);
+}

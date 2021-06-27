@@ -1,6 +1,5 @@
 <!--
-
-____________________________________
+___________________________
 / Si necesitas ayuda, contáctame    \
  ------------------------------------
         \   ^__^
@@ -17,110 +16,86 @@ excepto si este es un proyecto de un estudiante.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertir HTML a PDF</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>Generador de botela de compras</title>
     <!-- El script de la librería-->
-    <script src="html2pdf.bundle.min.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
     <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
-    <script src="script.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- google font krub -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Algunos estilos -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-
-
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
-
-
 <body>
-
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-
-
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contacto</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Siguenos en Twitter</a></li>
-                            <li><a href="#" class="text-white">Enlace a Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <strong>Comprobante</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
+    <header class="hero">
+        <div class="contenido-hero">
+            <h2>Soluciones inteligentes</h2>
+            <img src="img/logo.jpg" alt="">
+            <p>Somos tu solución</p>
         </div>
     </header>
 
-
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html"> Home </a>
+            <a href="#"> Resumen </a>
+            <a href="#"> Contacto </a>
+        </nav>
+    </div>
+   
     <div class="album py-5 bg-light">
         <div class="container">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col offset-md-3">
-                    <div class="card shadow-sm">
-
-                        <div class="card-body">
-
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="card sombra">
+                        <div class="card-body bg-form">
                             <form id="formulario">
                                 <div class="form-group my-4">
                                     <label for="">Nombre del producto</label>
                                     <input type="text" class="form-control" id="IdNombre" placeholder="Ingrese nombre de un producto">
-                                    <small id="IdDetalle" class="form-text text-muted">Ingrese nombre de un producto.</small>
-                                </div>
+                                     </div>
 
                                 <div class="form-group my-4">
                                     <label for="">Detalle del producto</label>
                                     <input type="text" class="form-control" id="idDetalle" placeholder="Ingrese detalle de un producto">
-                                    <small class="form-text text-muted">Ingrese el detalle del producto.</small>
-                                </div>
+                                   </div>
 
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col">
                                             <label for="IdUnidad">Unidad</label>
-                                            <input type="number" min="0" class="form-control" id="IdUnidad">
+                                            <input type="number" min="0" class="form-control" id="IdUnidad" placeholder="Ingrese unidad del producto">
                                         </div>
                                         <div class="col">
                                             <label for="IdPrecio">Precio unitario</label>
-                                            <input type="number" min="0" class="form-control" id="IdPrecio">
+                                            <input type="number" min="0" class="form-control" id="IdPrecio" placeholder="Ingrese precio del producto">
                                         </div>
                                     </div>
                                 </div>
 
 
                             </form>
-                            <!-- <button id="btnCrearPdf">Click aquí</button>
-                      <h5>Estamos probando la creación de un PDF desde HTML usando JavaScript</h5> -->
 
                             <div class="form-group my-4">
-                                <button id="btnCrearPdf" class="btn btn-success m-2" title=" Antes de guardar en PDF, presione el boton Ocular formulario de venta">Guardar</button>
-                                <button id="btnAgregar" class="btn btn-primary m-2" title="Se agrega el producto a un listado para armar un inventario con todos los productos que haya registrado">agregar producto</button>
-                                <button id="btnOcultar" class="btn btn-success m-2" title="Oculta el formulario de ventas y luego presione en Guardar para generar el PDF">Ocultar Formulario de venta</button>
-                            </div>
-
-
+                                <button id="btnCrearPdf" class="btn btn-custom-1 m-2" title=" Antes de guardar en PDF, presione el boton Ocular formulario de venta">Guardar</button>
+                                <button id="btnAgregar" class="btn btn-custom-2 m-2" title="Se agrega el producto a un listado para armar un inventario con todos los productos que haya registrado">agregar producto</button>
+                                </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="comprobante" class="col offset-md-3">
+                <div id="comprobante" class="col-md-4 offset-md-3">
 
-                    <div class="card shadow-sm">
+                    <div class="card">
                         <div class="card-body">
 
                             <table class="table">
@@ -148,18 +123,13 @@ excepto si este es un proyecto de un estudiante.
                                 </div>
 
                             </div>
-
-
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
     </div>
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 
