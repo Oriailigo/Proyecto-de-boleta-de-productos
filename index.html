@@ -53,76 +53,59 @@ excepto si este es un proyecto de un estudiante.
    
     <div class="album py-5 bg-light">
         <div class="container">
-
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-md-4">
                     <div class="card sombra">
                         <div class="card-body bg-form">
                             <form id="formulario">
                                 <div class="form-group my-4">
                                     <label for="">Nombre del producto</label>
-                                    <input type="text" class="form-control" id="IdNombre" placeholder="Ingrese nombre de un producto">
+                                    <input type="text" class="form-control" id="titulo" placeholder="Ingrese nombre de un producto">
                                      </div>
 
-                                <div class="form-group my-4">
-                                    <label for="">Detalle del producto</label>
-                                    <input type="text" class="form-control" id="idDetalle" placeholder="Ingrese detalle de un producto">
-                                   </div>
-
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-6">
                                             <label for="IdUnidad">Unidad</label>
-                                            <input type="number" min="0" class="form-control" id="IdUnidad" placeholder="Ingrese unidad del producto">
+                                            <input type="number" min="0" class="form-control" id="cantidad" placeholder="Ingrese unidad del producto">
                                         </div>
-                                        <div class="col">
+                                        <div class="col-lg-6">
                                             <label for="IdPrecio">Precio unitario</label>
-                                            <input type="number" min="0" class="form-control" id="IdPrecio" placeholder="Ingrese precio del producto">
+                                            <input type="number" min="0" class="form-control" id="precio" placeholder="Ingrese precio del producto">
                                         </div>
                                     </div>
                                 </div>
-
-
                             </form>
 
                             <div class="form-group my-4">
                                 <button id="btnCrearPdf" class="btn btn-custom-1 m-2" title=" Antes de guardar en PDF, presione el boton Ocular formulario de venta">Guardar</button>
                                 <button id="btnAgregar" class="btn btn-custom-2 m-2" title="Se agrega el producto a un listado para armar un inventario con todos los productos que haya registrado">agregar producto</button>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="comprobante" class="col-md-4 offset-md-3">
-
-                    <div class="card">
-                        <div class="card-body">
-
+                <div id="comprobante" class="bg-white col-md-7 offset-md-1 mt-4">
+                    <div class="pt-2">
+                        <div class="table-responsive">
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Nombre </th>
-                                        <th scope="col">Detalle</th>
+                                        <th scope="col">Producto </th>
                                         <th scope="col">Cantidad</th>
                                         <th scope="col">Precio</th>
-
+                                        <th scope="col">Subtotal</th>
+                                        <th scope="col">Eliminar</th>
                                     </tr>
                                 </thead>
-                                <tbody id="resultado">
-
-
-                                </tbody>
+                                <tbody id="mytbody"></tbody>
                             </table>
+                        </div>
+                        
 
-                            <div class="row">
-                                <div class="col">
-                                    <h1>Total </h1>
-                                </div>
-                                <div class="col">
-                                    <h1 id="MontoTotal">$</h1>
-                                </div>
-
-                            </div>
+                        <div class="row">
+                            <div class="col"><h1>Total </h1></div>
+                            <div class="col"><h1 id="MontoTotal">$</h1></div>
                         </div>
                     </div>
                 </div>
