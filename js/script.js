@@ -69,9 +69,8 @@ const miboleta = new Boleta(0,[]);
 // de JSON a obj JS  Text
 // var obj = JSON.parse(myJSONtext);
 // console.log(miboleta.productos);
+// let aux = JSON.stringify(miboleta.productos);
 
-
-let aux = JSON.stringify(miboleta.productos);
 document.addEventListener("DOMContentLoaded", function (event) {
      // Escuchamos el click del botón
      const $boton_guardar = document.querySelector("#btnCrearPdf");
